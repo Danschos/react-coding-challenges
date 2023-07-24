@@ -10,7 +10,6 @@ function timeToPositionPercent(startTime) {
   const timeDiff = now - startTime;
 
   if (timeDiff >= MS_TO_TAKEOFF) { return FINAL_POSITION_BOTTOM_VAL; }
-
   return `calc(300px + ${((timeDiff / MS_TO_TAKEOFF) * 100).toFixed(0)}%)`;
 }
 
